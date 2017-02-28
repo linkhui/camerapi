@@ -4,6 +4,7 @@
 import subprocess
 import camera
 import ftpservice
+import uploadtoqiniu
 
 def capturePicture():
     callString = 'raspistill -o image.jpg'
@@ -12,3 +13,4 @@ def capturePicture():
 #capturePicture()
 filePath = camera.captureImage()
 ftpservice.uploadfile(filePath)
+uploadtoqiniu.uploadfile(filePath)
