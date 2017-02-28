@@ -21,6 +21,7 @@ def uploadfile(localFilePath):
     #需要填写你的 Access Key 和 Secret Key
     #access_key = '1_NOKO0I8dW3pe1hgF4vfe5TTwroyYZG-rqIbSe_' #这里的密钥填上刚才我让你记住的密钥对
     #secret_key = '7nqJUN4zsd40CtUqndVY-ZLhiP16HMCnSQuLJxaq' #这里的密钥填上刚才我让你记住的密钥对
+    global access_key,secret_key
  
     readconf()
     print access_key,secret_key
@@ -44,4 +45,4 @@ def uploadfile(localFilePath):
     ret, info = put_file(token, remoteFileName, localFilePath)
         
 if __name__ == '__main__':
-    uploadfile("image.jpg")
+    uploadfile("/home/pi/web/www/captureimages/image-0954.jpg")

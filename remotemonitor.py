@@ -12,5 +12,5 @@ def capturePicture():
 
 #capturePicture()
 filePath = camera.captureImage()
-ftpservice.uploadfile(filePath)
 uploadtoqiniu.uploadfile(filePath)
+#ftpservice.uploadfile(filePath)

@@ -32,9 +32,9 @@ def readconf():
     password = cf.get('ftp', 'password')
 
 def ftpconnect():  
+    global ftp_server, username, password
 
     readconf()
-    print ftp_server, username, password
 
     ftp=FTP()  
     ftp.set_debuglevel(2) #打开调试级别2，显示详细信息  
